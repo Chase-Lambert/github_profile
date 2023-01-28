@@ -35,17 +35,21 @@ async fn main() -> MyNewJob {
         projects: vec![
             Project {
                 name: "lessonplanner.ai",
-                // Repo is currently private. Can allow access upon request.
+                // Currently deployed on free tier so first load may be slow
+                url: "https://lessonplanner.onrender.com/",
                 repo: "https://github.com/Chase-Lambert/lesson_planner",
                 desc: "Full stack Rust app \
-                       Backend uses Axum with a Postrgres db \
+                       Backend uses Axum with a Postgres db \
                        Frontend uses Leptos with Tailwind CSS for styling. \
                        Uses the OpenAI api to help teachers build lesson plans.",
             },
             Project {
                 name: "distance finder",
+                // Currently deployed on free tier so first load may be slow
+                url: "https://distancefinder.onrender.com/",
                 repo: "https://github.com/Chase-Lambert/distancefinder",
-                desc: "Final project for Harvard's CS50 course.",
+                desc: "Final project for Harvard's CS50 course \
+                       Built using Python with Flask",
             },
         ],
     };

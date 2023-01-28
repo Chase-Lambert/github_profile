@@ -10,6 +10,7 @@ pub struct AboutMe<'a> {
 #[derive(Debug)]
 pub struct Project<'a> {
     pub name: &'a str,
+    pub url: &'a str,
     pub repo: &'a str,
     pub desc: &'a str,
 }
