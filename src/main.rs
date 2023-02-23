@@ -11,24 +11,12 @@ async fn main() -> MyNewJob {
     let about_me = AboutMe {
         name: "Chase Lambert",
 
-        about: "I am a self taught developer who has experience building full stack web apps.   \
-                I have used Javascript with React (and Python with Flask and Django) but mostly \
-                prefer using Clojure(script) and now Rust. \
-                I am currently looking for full or part time work with Rust. \
-                I prefer remote but will consider relocation within the US.  \
-                I have mainly focused on web development but am open to other projects as well.",
+        about: "I am a self taught developer who has experience building full stack web apps. \
+                I am looking for a new role using Clojure/ClojureScript or Rust. \
+                I prefer remote but will consider relocation within the US. \
+                I have mainly focused on web development but am open to other projects as well",
 
-        skills: vec![
-            "Rust",
-            "Web Development",
-            "Clojure(script)",
-            "Python",
-            "Javascript",
-            "Typescript",
-            "React",
-            "Tailwind CSS",
-            "HTMX",
-        ],
+        skills: vec!["Rust", "Clojure(Script)", "Web Development", "Tailwind CSS"],
 
         contact: "chaselambert@gmail.com",
 
@@ -36,7 +24,7 @@ async fn main() -> MyNewJob {
             Project {
                 name: "lessonplanner.ai",
                 // Currently deployed on free tier so first load may be slow
-                url: "https://lessonplanner.onrender.com/",
+                url: "https://lessonplanner-rust.onrender.com/",
                 repo: "https://github.com/Chase-Lambert/lesson_planner",
                 desc: "Full stack Rust app \
                        Backend uses Axum with a Postgres db \
@@ -47,7 +35,7 @@ async fn main() -> MyNewJob {
                 name: "distance finder",
                 // Currently deployed on free tier so first load may be slow
                 url: "https://distancefinder.onrender.com/",
-                repo: "https://github.com/Chase-Lambert/distancefinder",
+                repo: "https://github.com/chase-lambert/distancefinder",
                 desc: "Final project for Harvard's CS50 course \
                        Built using Python with Flask",
             },
