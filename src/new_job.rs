@@ -3,6 +3,8 @@ use std::{
     process::{ExitCode, Termination},
 };
 
+use crate::profile::AboutMe;
+
 pub struct NewJob {}
 
 pub type MyNewJob = Result<NewJob, Box<dyn Error>>;
@@ -13,6 +15,6 @@ impl Termination for NewJob {
     }
 }
 
-pub async fn find_new_job() -> Result<NewJob, Box<dyn Error>> {
+pub async fn find_new_job(_profile: AboutMe<'_>) -> Result<NewJob, Box<dyn Error>> {
     Ok(NewJob {})
 }

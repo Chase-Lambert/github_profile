@@ -16,7 +16,13 @@ async fn main() -> MyNewJob {
                 I prefer remote but will consider relocation within the US. \
                 I have mainly focused on web development but am open to other projects as well",
 
-        skills: vec!["Rust", "Clojure(Script)", "Web Development", "Tailwind CSS"],
+        skills: vec![
+            "rust",
+            "clojure(script)",
+            "web development",
+            "sql (mostly postgres)",
+            "tailwind",
+        ],
 
         contact: "chaselambert@gmail.com",
 
@@ -25,7 +31,7 @@ async fn main() -> MyNewJob {
                 name: "lessonplanner.ai",
                 // Currently deployed on free tier so first load may be slow
                 url: "https://lessonplanner-rust.onrender.com/",
-                repo: "https://github.com/Chase-Lambert/lesson_planner",
+                repo: "https://github.com/chase-lambert/lesson_planner",
                 desc: "Full stack Rust app \
                        Backend uses Axum with a Postgres db \
                        Frontend uses Leptos with Tailwind CSS for styling. \
@@ -42,9 +48,7 @@ async fn main() -> MyNewJob {
         ],
     };
 
-    println!("{about_me:#?}");
-
-    let new_job = find_new_job().await?;
+    let new_job = find_new_job(about_me).await?;
 
     Ok(new_job)
 }
